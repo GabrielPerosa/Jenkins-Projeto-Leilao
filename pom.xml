@@ -18,13 +18,13 @@
     <name>leilao</name>
 
     <properties>
-        <java.version>11</java.version> <!-- Versão Java atualizada -->
+        <java.version>11</java.version> <!-- Versão Java -->
         <maven.compiler.version>3.8.1</maven.compiler.version>
-        <maven.surefire.version>2.22.2</maven.surefire.version> <!-- Versão atualizada do surefire -->
+        <maven.surefire.version>2.22.2</maven.surefire.version> <!-- Versão do surefire -->
     </properties>
 
     <dependencies>
-        <!-- Dependências do projeto -->
+        <!-- Dependências do Spring Boot -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -42,6 +42,20 @@
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <scope>runtime</scope> <!-- Banco em memória para desenvolvimento e testes -->
+        </dependency>
+        
+        <!-- Dependência para javax.validation -->
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>javax.validation-api</artifactId>
+            <version>2.0.1.Final</version>
+        </dependency>
+        
+        <!-- Dependência para Spring Security -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>5.6.1</version>
         </dependency>
     </dependencies>
 
